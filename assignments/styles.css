@@ -30,6 +30,7 @@ footer{
   border: black solid thin;
   padding-left: 5px;
   border-radius: 5px;
+  text-align: center;
 }
 
 figure.left {
