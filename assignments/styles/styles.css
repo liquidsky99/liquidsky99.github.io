@@ -5,24 +5,41 @@ body {
     font-family: Candara;
     color: DarkBlue;
 }
+
+
+.read-heading {
+  color: red;
+}
+
+
 h2 {
   
   color: lightseagreen;
 
 }
-    
+
+header {
+  font-weight: bold;
+  color: darkblue;
+  text-align: center;
+}
+
  
 header p {
     font-weight: bold;
     color: plum;
+    text-align: center;
 }
 
 main{
-  background: white;
+  background: rgb(248, 247, 246);
 }
 
-figure.left{
-    float: left;
+figure {
+  float: left;
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
 }
 
 footer{
