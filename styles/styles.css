@@ -43,7 +43,31 @@ nav li {
   display: inline;
   padding: 8px;    
 }
-          
+
+.btn-padding {
+  padding: 25px;
+  border: 10px gray;    
+  border-radius: 22px;
+}
+
+.btn-margin-padding {
+  padding: 25px;
+  border: 10px plum;    
+  border-style: ridge;
+}
+
+#button-wrapper{
+  background-color: aqua;
+  display: inline-block;
+  border: thin black solid;
+}
+
+
+.btn-padding:hover {
+  background-color: whitesmoke;
+  border-color: white;
+}                   
+      
 
 figure {
   float: left;
