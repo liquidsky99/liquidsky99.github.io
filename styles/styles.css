@@ -6,16 +6,27 @@ body {
     color: DarkBlue;
 }
 
+<<<<<<< HEAD
+#content {
+    text-align: center ;
+    padding: 30px;
+    width: 700px ;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+=======
+>>>>>>> 9afb9c259c381ea5f60ebcea5434f499989e73df
 h2 {
   
-  color: lightseagreen;
+    color: lightseagreen;
 
 }
 
 header {
-  font-weight: bold;
-  color: darkblue;
-  text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
 }
 
  
@@ -26,10 +37,17 @@ header p {
 }
 
 nav {        
+<<<<<<< HEAD
+    background-color: aliceblue;
+    border: 1px aliceblue;
+    padding: 15px;
+    margin: -1px 0px 0px 0px;
+=======
   background-color: aliceblue;
   border: 1px green solid;
   padding: 8px;
   margin: -1px 0px 0px 0px;
+>>>>>>> 9afb9c259c381ea5f60ebcea5434f499989e73df
 }
 
 nav ul {
@@ -38,6 +56,36 @@ nav ul {
   padding: 0;
   
 }
+<<<<<<< HEAD
+
+nav li {
+    display: inline;
+    padding: 8px;    
+}
+
+.btn-padding {
+    padding: 25px;
+    border: 10px gray;    
+    border-radius: 22px;
+}
+
+.btn-margin-padding {
+    padding: 25px;
+    border: 10px plum;    
+    border-style: ridge;
+}
+
+#button-wrapper{
+    background-color: aqua;
+    display: inline-block;
+    border: thin black solid;
+}
+
+
+.btn-padding:hover {
+    background-color: whitesmoke;
+    border-color: white;
+=======
 
 nav li {
   display: inline;
@@ -66,25 +114,27 @@ nav li {
 .btn-padding:hover {
   background-color: whitesmoke;
   border-color: white;
+>>>>>>> 9afb9c259c381ea5f60ebcea5434f499989e73df
 }                   
       
 
 figure {
-  float: left;
-  text-align: center;
-  font-size: smaller;
-  text-indent: 0;
+    float: left;
+    text-align: center;
+    font-size: smaller;
+    text-indent: 0;
 }
 
 footer{
-  background: white;
-  border: black solid thin;
-  padding-left: 5px;
-  border-radius: 5px;
-  text-align: center;
+    background: aliceblue;
+    border: lightgray solid thin;
+    padding-left: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: gray;
 }
 
 figure.left {
-  float: left;
+    float: left;
 }
  
