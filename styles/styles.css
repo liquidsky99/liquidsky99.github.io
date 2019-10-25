@@ -6,6 +6,7 @@ body {
     color: DarkBlue;
 }
 
+<<<<<<< HEAD
 #content {
     text-align: center ;
     padding: 30px;
@@ -14,6 +15,8 @@ body {
     margin-right: auto ;
 }
 
+=======
+>>>>>>> 9afb9c259c381ea5f60ebcea5434f499989e73df
 h2 {
   
     color: lightseagreen;
@@ -34,10 +37,17 @@ header p {
 }
 
 nav {        
+<<<<<<< HEAD
     background-color: aliceblue;
     border: 1px aliceblue;
     padding: 15px;
     margin: -1px 0px 0px 0px;
+=======
+  background-color: aliceblue;
+  border: 1px green solid;
+  padding: 8px;
+  margin: -1px 0px 0px 0px;
+>>>>>>> 9afb9c259c381ea5f60ebcea5434f499989e73df
 }
 
 nav ul {
@@ -46,6 +56,7 @@ nav ul {
   padding: 0;
   
 }
+<<<<<<< HEAD
 
 nav li {
     display: inline;
@@ -74,6 +85,36 @@ nav li {
 .btn-padding:hover {
     background-color: whitesmoke;
     border-color: white;
+=======
+
+nav li {
+  display: inline;
+  padding: 8px;    
+}
+
+.btn-padding {
+  padding: 25px;
+  border: 10px gray;    
+  border-radius: 22px;
+}
+
+.btn-margin-padding {
+  padding: 25px;
+  border: 10px plum;    
+  border-style: ridge;
+}
+
+#button-wrapper{
+  background-color: aqua;
+  display: inline-block;
+  border: thin black solid;
+}
+
+
+.btn-padding:hover {
+  background-color: whitesmoke;
+  border-color: white;
+>>>>>>> 9afb9c259c381ea5f60ebcea5434f499989e73df
 }                   
       
 
