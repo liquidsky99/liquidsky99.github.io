@@ -1,11 +1,14 @@
-body {
-  padding: 20;
-  margin: 20;
-  background: #E0FFFF;
+body{
+  background-color: white;
+  text-align: center;
   font-family: Candara;
-  color: MediumBlue;
-  
 }
+
+
+main {
+  background-color: white
+}
+
 
 .grid { 
   display: grid;
@@ -13,6 +16,7 @@ body {
   grid-gap: 20px;
   align-items: stretch;
   }
+
 .grid img {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
@@ -22,7 +26,7 @@ body {
  #menu{
   position: top; 
   top: 0;
-  height: 70px;
+  height: 60px;
   bottom: 10;
   text-align: center;
   align-items: center;
@@ -34,9 +38,9 @@ body {
   #menu li{
   display: inline-block;
   word-spacing: 2em;
-  font-size: 25px;
+  font-size: 20px;
      
-    }
+}
 
   #top{
   position: top; 
@@ -49,11 +53,13 @@ body {
 
   #home{
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   border: 0;
+  text-align: left;
   overflow: hidden;
-  height: 100%; 
-  max-height: 100%; 
+  height: 300px; 
+  max-height: 100%;
+  background: rgb(221, 250, 250);
   }
 
   figure.right {
@@ -62,11 +68,13 @@ body {
 
   #other{
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   border: 0;
+  text-align: left;
   overflow: hidden;
   height: 100%; 
   max-height: 100%; 
+  background: rgb(221, 250, 250);
   }
   
   figure.left {
