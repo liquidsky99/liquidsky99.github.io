@@ -40,7 +40,25 @@ main {
   word-spacing: 2em;
   font-size: 20px;
      
-}
+  }
+
+  #block01 {
+    text-align: left;
+    padding: 20px;
+    
+    }
+
+  #block02 {
+    text-align: left;
+    padding: 20px;
+    }
+
+  #block03 {
+    text-align: left;
+    padding:20px;
+   
+    }
+    
 
   #top{
   position: top; 
