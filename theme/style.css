@@ -30,7 +30,7 @@ main {
   bottom: 10;
   text-align: center;
   align-items: center;
-  overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+  overflow: hidden; 
   background-color: rgb(223, 222, 222);
   color: white;
   }
