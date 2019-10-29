@@ -65,8 +65,9 @@ a.button {
     -moz-appearance: button;
     appearance: button;
     font-size: smaller;
-    padding: 10px;
-    border: 10px gray;    
+    color: initial;
+    /*padding: 10px;
+    border: 10px gray; */   
    
 }
 
