@@ -66,8 +66,8 @@ a.button {
     appearance: button;
     font-size: smaller;
     color: initial;
-    /*padding: 10px;
-    border: 10px gray; */   
+    padding: 10px;
+    border: 10px gray;   
    
 }
 
