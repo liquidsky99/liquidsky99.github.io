@@ -16,7 +16,6 @@ body {
 }
 
 h2 {
-  
     color: lightseagreen;
 
 }
@@ -58,7 +57,17 @@ nav ul {
 
 nav li {
     display: inline;
-    padding: 10px;    
+    padding: 15px;    
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    font-size: smaller;
+    padding: 10px;
+    border: 10px gray;    
+   
 }
 
 .btn-padding {
@@ -66,6 +75,7 @@ nav li {
     padding: 25px;
     border: 10px gray;    
     border-radius: 22px;
+    margin-bottom: 25px;
 }
 
 .btn-margin-padding {
