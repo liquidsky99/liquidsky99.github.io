@@ -46,7 +46,8 @@ nav {
     background-color: aliceblue;
     border: 10px aliceblue;
     padding: 15px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 10px 0px 0px;
+    text-align: center;   
 }
 
 nav ul {
@@ -57,7 +58,9 @@ nav ul {
 
 nav li {
     display: inline;
-    padding: 15px;    
+    padding: 15px; 
+    margin: 40px;
+    
 }
 
 a.button {
@@ -110,7 +113,6 @@ figure.left {
 }
 
 footer{
-    background: aliceblue;
     padding: 5px;
     padding-left: 5px;
     border-radius: 5px;
