@@ -47,26 +47,26 @@ main {
 
 
   #block01 {
+    float: left;
     text-align: left;
     padding: 20px;
-    
+    background-color: white;
     }
 
   #block02 {
+    float: left;
     text-align: left;
     padding: 20px;
+    background-color: white;
     }
 
   #block03 {
+    float: left;
     text-align: left;
     padding:20px;
+    background-color: white;
     }
 
-    #block04 {
-      text-align: left;
-      padding:20px;
-     }
-    
 
   #top{
   position: top; 
@@ -112,7 +112,6 @@ main {
   }
   
   footer{
-  
   text-align: center;
   color: gray;
   }
