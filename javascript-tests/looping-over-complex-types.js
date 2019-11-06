@@ -40,7 +40,9 @@ divider();
 
 const files = ["bundle.js", "*.js.map", ".c9"];
 
-console.log(fileNames.split(', '));
+console.log(files.join(', '));
+
+//console.log(fileNames.split(', '));
 
 const fileNames = "bundle.js, *.js.map, .c9";
 
@@ -54,7 +56,7 @@ const smallNumbers = {
     two:2,
     three:3
 }
-console.log("Object:", myObject, smallNumbers);
+console.log("Object:", emptyObject, smallNumbers);
 
 divider();
 
