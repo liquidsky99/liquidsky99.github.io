@@ -76,6 +76,17 @@ nav li {
     
 }
 
+aside {        
+    background-color: bisque;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 5px;
+    padding: 8px;
+    width: 33%;        
+}
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -112,6 +123,14 @@ a.button {
 .btn-padding:hover {
     background-color: whitesmoke;
     border-color: white;
+}
+
+.elf-div-border {
+    margin-top: 10px;
+    padding: 25px;
+    border: 10px gray;    
+    border-radius: 22px;
+    margin-bottom: 25px;
 }
 
 figure {
