@@ -16,12 +16,14 @@ function functionParameters(value){
     console.log(value);
 }
 
-function functionReturn(){
-    return "Many functions return values.";
+function functionReturn(addResult){
+    return "The add function returned" + addResult;
 }
 
 function add (a, b){
-    return a + b;
+    const addResult = a + b;
+    console.log('Inside add', addResult);
+    return addResult;
 }
 
 //simpleFunction();
