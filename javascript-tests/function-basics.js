@@ -3,13 +3,15 @@ window.onload = () => {
     const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
     const functionCallsAction = document.getElementById('functionCallsAction');
 
-functionCallsAction.onclick = simpleFunction;
+functionCallsAction.onclick = function() {
+    simpleFunction();
+}
 
 function simpleFunction() {
     console.log("functions should consist os statement designed to perform a single task.");
     simpleFunctionDisplay.textContent = "some other texts";
 }
-    simpleFunction();
+    //simpleFunction();
 }
 
 function functionParameters(value){
