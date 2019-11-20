@@ -28,7 +28,6 @@ function add (a, b){
     return addResult;
 }
 
-//simpleFunction();
 
 functionParameters("Many functions take parameters.");
 
