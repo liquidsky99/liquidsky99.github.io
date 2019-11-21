@@ -3,13 +3,11 @@ window.onload = () => {
     const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
     const simpleObjectAction = document.getElementById('simpleObjectAction');
 
-    //simpleObjectDisplay.textContent = 'foo';
-
     
     const simpleObject = {
         firstName: 'James',
         lastName: 'Watson',
-        SayName: function(){
+        sayName: function(){
             const fullName = this.firstName + " " + this.lastName;
             console.log(fullName);
             simpleObjectDisplay.textContent = fullName;
@@ -44,6 +42,5 @@ functionObject.sayName();
 
 const customClass = new CustomClass();
 customClass.sayName();
-
 
 }
