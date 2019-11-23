@@ -9,8 +9,7 @@ window.onload = () => {
         lastName: 'Watson',
         sayName: function(){
             const fullName = this.firstName + " " + this.lastName;
-            var name = 'Name'.concat(this.firstName,'<br>','Full Name ', fullName);
-            
+            var name = 'Get Name: '.concat(this.firstName,'<br>','Get Full Name: ', fullName);
             console.log(fullName);
             simpleObjectDisplay.innerHTML = name;
         }
