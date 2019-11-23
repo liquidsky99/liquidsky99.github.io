@@ -1,11 +1,12 @@
 window.onload = () => {
     // All code goes in here.
-    const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
+    const addToListFunctionDisplay = document.getElementById('addToListFunction');
 
 const elfCode = {
-    appendToList: (list, value) => {
+    addlistFunction: (list, value) => {
         const li = document.createElement("li");
         li.appendChild(document.createTextNode(value));
         list.appendChild(li);
     }
 }
+
