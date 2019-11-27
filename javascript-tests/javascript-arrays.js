@@ -23,4 +23,22 @@ window.onload = () => {
         elfCode.appendToList(numbersDisplay, number);
          }
     }
+
+    const languageAction = document.getElementById('language-action');
+    const languageDisplay = document.getElementById('language-display');
+
+    const languagearrays = {
+        language: ["JavaScript","HTML","CSS","C#","Java","C#","Python","C/C++"]
+    };
+
+    languagearrays.language.sort();
+
+    languageAction.onclick = () => { 
+        for (let language of languagearrays.language){
+        console.log(language);
+        elfCode.appendToList(languageDisplay, language);
+         }
+    }
+
+    
     }
