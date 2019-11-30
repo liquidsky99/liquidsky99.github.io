@@ -2,6 +2,8 @@ window.onload = () => {
     
     const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
     const simpleObjectAction = document.getElementById('simpleObjectAction');
+    const functionObjectDisplay = document.getElementById('functionObjectDisplay');
+    const functionObjectAction = document.getElementById('functionObjectAction');
 
     
     const simpleObject = {
@@ -23,11 +25,11 @@ window.onload = () => {
 
 
 
-simpleObject.dynamicMethod = function(){
+/* simpleObject.dynamicMethod = function(){
     console.log("Dynamic Method");
 }
 
-
+ */
 class CustomClass {
     sayName(){
         console.log("Custom Class");
