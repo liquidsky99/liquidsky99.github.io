@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio choices</title>
+    <link href="../styles/styles.css" rel="stylesheet">
+    <script src = ./radio-choises.js></script>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <h1>Radio choices</h1>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Index</a></li>
+            
+            </ul>
+    </nav>
+
+    <main>
+        <fieldset> 
+            <legend>The User Selection</legend> 
+            <p><b>User choice</b>: <span id="user-choice">Unknown</span></p> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Our Form</legend>
+            <!-- OUR FORM GOES HERE -->
+        </fieldset>
+
+        <form id="sort-type" action="goThere">
+            <input type="radio" id="blue" name="sorter" value="Blue" checked>
+            <label for="blue">Blue</label>
+        
+            <input type="radio" id="green" name="sorter" value="Green">
+            <label for="green">Green</label>
+            <div>
+            <input class="btn-padding" type="submit" value="Submit">
+            </div>
+        </form>
+
+
+                    
+    </main>
+   
+    <p id="simpleObjectDisplay"></p>
+
+    <button id = "simpleObjectAction">Get Name</button>
+
+    <footer>
+        <p>Copyright &copy; 2019 by Sophie Conroy</p>
+    </footer>
+
+</body>
+</html>

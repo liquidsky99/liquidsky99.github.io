@@ -43,13 +43,13 @@ window.onload = () => {
     var programinglanguage = [
         {
             language: 'JavaScript',
-            rank: 2
-        },
-        {
-            language: 'HTML/CSS',
             rank: 1
         },
         {
+            language: 'HTML/CSS',
+            rank: 2
+        },
+       /*  {
             languageName: 'Python',
             rank: 3
         },
@@ -64,14 +64,15 @@ window.onload = () => {
         {
             languageName: 'C/C++',
             rank: 6
-        }
+        } */
     ];
 
     const popularityAction = document.getElementById('popularity-action');
     const popularityDisplay = document.getElementById('popularity-display');
 
     const popularityarrays = {
-        language: ["JavaScript","HTML/CSS","Python","Java","C#","C/C++"]
+        language: ["JavaScript","HTML/CSS"]
+        /* language: ["JavaScript","HTML/CSS","Python","Java","C#","C/C++"] */
     };
 
     function compareRank(a, b) {
@@ -87,10 +88,10 @@ window.onload = () => {
        return comparison;
    }
     
-    programinglanguage.sort(compareRank);
+    popularityarrays.language.sort(compareRank);
     /* popularityarrays.popularity.sort(compareRank); */
 
-    languageAction.onclick = () => { 
+    popularityAction.onclick = () => { 
         for (let language of popularityarrays.language){
         console.log(popularity);
         elfCode.appendToList(popularityDisplay, language);
