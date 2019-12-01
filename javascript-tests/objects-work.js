@@ -1,43 +1,78 @@
-window.onload = () => {
-    
-    const functionObjectDisplay = document.getElementById('functionObjectDisplay');
-    const functionObjectAction = document.getElementById('functionObjectAction');
-    const calculatorDisplay = document.getElementById('calculatortDisplay');
-    const calculatorAction = document.getElementById('calculatorAction');
-
-    
-    const functionObject = {
-        firstName: 'George',
-        lastName: 'Washington',
-        sayName: function(){
-            const fullName = this.firstName + " " + this.lastName;
-            var name = 'First Name: '.concat(this.firstName,'<br>', 'Last Name: ', this.lastName,'<br>','Full Name: ', fullName);
-            console.log(fullName);
-            functionObjectDisplay.innerHTML = name;
-        }
-        
-    };
-
-
-    functionObjectAction.onclick = function(){
-        functionObject.sayName();
-    }
-
-    const calculator = {
-        firstName: 'George',
-        lastName: 'Washington',
-        nameLength: function(){
-            const fullName = this.firstName + " " + this.lastName;
-            var number = 'First Name: '.concat(this.firstName,'<br>', 'Last Name: ', this.lastName,'<br>','Full Name: ', fullName);
-            console.log(fullName);
-            calculatorDisplay.innerHTML = number;
-        }
-        
-    };
-
-
-    calculatorAction.onclick = function(){
-        calculator.nameLength();
-    }  
-    
+function divider(Person) {
+    console.log("\n====================================");
+    console.log(Person);
+    console.log("====================================\n");
 }
+
+divider('Person');
+
+var myObject01 = {
+	firstName: "George",
+	lastName: "Washington"
+};
+
+var myObject02 = {
+	firstName: "George",
+	lastName: "Washington",
+	fullName: function() { 'use strict';
+		return this.firstName + ' ' + this.lastName;
+	}
+};
+
+
+var myObject03 = {
+    lengthFirst: function(){
+        var first = "George";
+		return first.length;
+    }
+}
+
+var myObject04 = {
+    lengthLast: function(){
+        var last= "Washington";
+		return last.length;
+    }
+}
+
+var myObject05 = {
+	a: 6,
+	b: 10,
+	lengthAdd: function() { return this.a + this.b; }
+}; 
+
+var myObject06 = {
+	a: 6,
+	b: 10,
+	lengthSub: function() { return this.a - this.b; }
+}; 
+
+var myObject07 = {
+	a: 6,
+	b: 10,
+	lengthMul: function() { return this.a * this.b; }
+}; 
+
+console.log('First Name: ' + myObject01.firstName);
+console.log('Last Name: ' + myObject01.lastName);
+console.log('Full Name: ' + myObject02.fullName());
+
+function divider(calculator) {
+    console.log("\n====================================");
+    console.log(calculator);
+    console.log("====================================\n");
+}
+
+divider('Calculator');
+
+console.log('operand01 is the length of firstName: ' + myObject03.lengthFirst());
+console.log('operand02 is the length of lastName: ' + myObject04.lengthLast());
+console.log('Add length of first and lastNames: ' + myObject05.lengthAdd());
+console.log('Subtract length of first and lastNames: ' + myObject06.lengthSub());
+console.log('Multiply length of first anhd lastNames: ' + myObject07.lengthMul()); 
+
+
+
+
+
+
+
