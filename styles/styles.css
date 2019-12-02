@@ -1,6 +1,4 @@
 body {
-    padding: 20;
-    margin: 20;
     background: rgb(221, 250, 250);
     font-family: Candara;
     color: DarkBlue;
@@ -37,6 +35,8 @@ header p {
 main {
     padding: 20px;
     margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
     background-color: rgb(221, 250, 250);
     margin-bottom: 20px;
     align-items: center;
@@ -47,10 +47,10 @@ main {
 #index {
     background-color: white;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     width: 100% ;
-    margin-left: auto;
-    margin-right: auto ;
+    margin-left: 20px ;
+    margin-right: 20px ;
     margin-bottom: 10px;
 }
 
