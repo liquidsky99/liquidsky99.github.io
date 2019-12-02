@@ -4,6 +4,12 @@ text-align: center;
 font-family: Candara;
 }
 
+header p {
+  font-weight: bold;
+  color: powderblue;
+  text-align: center;
+
+}
 
 main {
 background-color: white;
@@ -79,7 +85,7 @@ background: #fff;
 
 #top{
 margin: 0;
-padding: 10px;
+padding: 30px;
 border: 0;
 text-align: left;
 overflow: hidden;
@@ -91,7 +97,7 @@ background: rgb(221, 250, 250);
 
 #home{
 margin: 0;
-padding: 10px;
+padding: 30px;
 border: 0;
 text-align: left;
 overflow: hidden;
@@ -102,6 +108,8 @@ background: rgb(221, 250, 250);
 
 figure.right {
 float: right;
+margin: 0px;
+padding: 0px;
 }
 
 figure figcaption {
@@ -110,7 +118,7 @@ figure figcaption {
 
 #other{
 margin: 0;
-padding: 10px;
+padding: 30px;
 border: 0;
 text-align: left;
 overflow: hidden;
@@ -120,6 +128,8 @@ background: rgb(221, 250, 250);
 }
 
 figure.left {
+margin: 0px;
+padding: 0px;
 float: left;
 }
 
