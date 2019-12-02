@@ -1,11 +1,14 @@
-window.onload = function() {
+window.onload = () => {
     
     const myForm = document.getElementById('sort-type');
+    function showChoice(fieldColor){
+        document.getElementById("user-choice").innerHTML=fieldColor;
+    }
 
     myForm.addEventListener('submit', (event) => {
         event.preventDefault();
         const value = document.querySelector('input[name="sorter"]:checked').value;
-        if (value.toLowerCase() === 'green') {
+        if (value.toLowerCase() === 'blue') {
             setColor("blueBackground");
             showChoice(value);
         } else {

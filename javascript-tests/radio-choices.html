@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Radio choices</title>
     <link href="../styles/styles.css" rel="stylesheet">
-    <script src = ./radio-choises.js></script>
+    <script src = ./radio-choices.js></script>
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
 </head>
 
 <body>
     <header>
         <h1>Radio choices</h1>
-        <p class="byline">by Sophie Conroy</p>
 
     <nav>
         <ul>
@@ -24,30 +23,28 @@
     </header>
 
     <main>
-            <fieldset>
-                <legend>The User Selection</legend>
-                <p><b>User choice </b>: </p>
-            </fieldset>
-            <section id="Form section">
-                <fieldset>
-                    <legend>Our From</legend>
-                    <form id="sort-type" action="goThere">
-                        <input type="radio" id="blue" name="sorter" value="Blue" checked>
-                        <label for="blue">Blue</label>
-                    
-                        <input type="radio" id="green" name="sorter" value="Green">
-                        <label for="green">Green</label>
-                        <div>
-                        <input class="btn-padding" type="submit" value="Submit">
-                        </div>
-                    </form>
-                </fieldset>
-            </section>
-            
-                
+        <fieldset> 
+            <legend>The User Selection</legend> 
+            <p><b>User choice</b>: <span id="user-choice">Unknown</span></p> 
+        </fieldset>
 
+        <section id="form-section">
+        <fieldset>
+            <legend>Our Form</legend>
+            <!-- OUR FORM GOES HERE -->
+    
+        <form id="sort-type" action="goThere">
+            <input type="radio" id="blue" name="sorter" value="Blue" checked>
+            <label for="blue">Blue</label>
         
-   
+            <input type="radio" id="green" name="sorter" value="Green">
+            <label for="green">Green</label>
+            <div>
+            <input class="btn-padding" type="submit" value="Submit">
+            </div>
+        </form>
+        </fieldset>
+        </section>
     </main>
     
     <footer>
