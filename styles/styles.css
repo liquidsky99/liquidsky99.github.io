@@ -149,6 +149,14 @@ footer{
 }
 
 .blueBackground {
+<<<<<<< HEAD
+    background-color: powderblue;
+}
+
+.greenBackground {
+    background-color: lightseagreen;
+}                
+=======
     background-color: aqua;
 }
 
@@ -156,3 +164,4 @@ footer{
     background-color: green;
 }                
             
+>>>>>>> b51bc524fba507bdaa8d76358100d42de199b35d
