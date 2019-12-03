@@ -1,5 +1,5 @@
 body {
-    background: powderblue;
+    background: rgb(191, 231, 236);
     font-family: Candara;
     color: DarkBlue;
 }
@@ -36,7 +36,7 @@ main {
     margin-top: 50px;
     margin-right: 100px;
     margin-left: 100px;
-    background-color:powderblue;
+    background-color:rgb(191, 231, 236);
     margin-bottom: 20px;
     align-items: center;
    
@@ -149,19 +149,10 @@ footer{
 }
 
 .blueBackground {
-<<<<<<< HEAD
-    background-color: powderblue;
+
+    background-color: aqua;
 }
 
 .greenBackground {
     background-color: lightseagreen;
 }                
-=======
-    background-color: aqua;
-}
-
-.greenBackground {
-    background-color: green;
-}                
-            
->>>>>>> b51bc524fba507bdaa8d76358100d42de199b35d
