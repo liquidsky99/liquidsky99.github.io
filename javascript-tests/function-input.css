@@ -1,6 +1,6 @@
 button {
     float: left;
-    width: 150px;
+    width: 150px;    
 }
 
 input {
@@ -11,3 +11,4 @@ input {
 div {
     clear: both;
 }
+
