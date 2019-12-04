@@ -56,7 +56,7 @@ divider('Calculator');
 
 console.log('Add length of first and lastNames: ' + lengthAdd(calculator.operand01, calculator.operand02));
 console.log('Subtract length of first and lastNames: ' + lengthSub(calculator.operand01, calculator.operand02));
-console.log('Multiply length of first anhd lastNames: ' + lengthMul(calculator.operand01, calculator.operand02));
+console.log('Multiply length of first and lastNames: ' + lengthMul(calculator.operand01, calculator.operand02));
 
 
 
