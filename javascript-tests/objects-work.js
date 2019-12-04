@@ -1,3 +1,4 @@
+
 function divider(Person) {
     console.log("\n====================================");
     console.log(Person);
@@ -18,43 +19,9 @@ var myObject02 = {
 		return this.firstName + ' ' + this.lastName;
 	}
 };
-
-
-var myObject03 = {
-    lengthFirst: function(){
-        var first = "George";
-		return first.length;
-    }
-}
-
-var myObject04 = {
-    lengthLast: function(){
-        var last= "Washington";
-		return last.length;
-    }
-}
-
-var myObject05 = {
-	a: 6,
-	b: 10,
-	lengthAdd: function() { return this.a + this.b; }
-}; 
-
-var myObject06 = {
-	a: 6,
-	b: 10,
-	lengthSub: function() { return this.a - this.b; }
-}; 
-
-var myObject07 = {
-	a: 6,
-	b: 10,
-	lengthMul: function() { return this.a * this.b; }
-}; 
-
-console.log('First Name: ' + myObject01.firstName);
-console.log('Last Name: ' + myObject01.lastName);
-console.log('Full Name: ' + myObject02.fullName());
+	console.log('First Name: ' + myObject01.firstName);
+	console.log('Last Name: ' + myObject01.lastName);
+	console.log('Full Name: ' + myObject02.fullName());
 
 function divider(calculator) {
     console.log("\n====================================");
@@ -62,13 +29,35 @@ function divider(calculator) {
     console.log("====================================\n");
 }
 
+var calculator = {
+	operand01: "",
+	operand02: ""
+}
+	calculator.operand01 = myObject01.firstName;
+	calculator.operand02 = myObject01.lastName;
+
+function lengthAdd(operand01, operand02)
+{
+	return operand01.length + operand02.length;
+}
+
+function lengthSub(operand01, operand02)
+{
+	return operand01.length - operand02.length;
+}
+
+function lengthMul(operand01, operand02)
+{
+	return operand01.length * operand02.length;
+}
+
+
 divider('Calculator');
 
-console.log('operand01 is the length of firstName: ' + myObject03.lengthFirst());
-console.log('operand02 is the length of lastName: ' + myObject04.lengthLast());
-console.log('Add length of first and lastNames: ' + myObject05.lengthAdd());
-console.log('Subtract length of first and lastNames: ' + myObject06.lengthSub());
-console.log('Multiply length of first anhd lastNames: ' + myObject07.lengthMul()); 
+console.log('Add length of first and lastNames: ' + lengthAdd(calculator.operand01, calculator.operand02));
+console.log('Subtract length of first and lastNames: ' + lengthSub(calculator.operand01, calculator.operand02));
+console.log('Multiply length of first anhd lastNames: ' + lengthMul(calculator.operand01, calculator.operand02));
+
 
 
 
