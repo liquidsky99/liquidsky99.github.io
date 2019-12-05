@@ -2,6 +2,10 @@ window.onload = () => {
     
     const functionObjectDisplay = document.getElementById('functionObjectDisplay');
     const functionObjectAction = document.getElementById('functionObjectAction');
+    const functionConstructorObjectDisplay = document.getElementById('functionConstructorObjectDisplay');
+    const functionConstructorObjectAction = document.getElementById('functionConstructorObjectAction');
+    const functionCustomObjectDisplay = document.getElementById('functionCustomObjectDisplay');
+    const functionCustomObjectAction = document.getElementById('functionCustomObjectAction');
 
     
     function FunctionObject()  {
@@ -11,71 +15,84 @@ window.onload = () => {
         FunctionObject.prototype.getFullName = () => {
             return firstName + ' ' + lastName;
         }
+    }
+
+    function FunctionSecondObject()  {
+        const firstName = 'James';
+        const middleName = 'barfoo';
+        const lastName = 'Watson';
     
-        const privateFunction = () => {
+        FunctionSecondObject.prototype.getSecondFullName = () => {
+            return firstName + ' ' + middleName + ' ' + lastName;
+        }
+    
+        /* const privateFunction = () => {
             return 'I can only be called from inside FunctionObject.'
         }
     
         FunctionObject.prototype.callPrivateFunction = () => {
             return 'The private function says: ' + privateFunction();
-        }
+        } */
     }
 
 
     functionObjectAction.onclick = function() {
         const constructorFunctionDisplay = document.getElementById('functionObjectDisplay')
         const functionObject = new FunctionObject();
+        const constructorFunctionSecondDisplay = document.getElementById('functionSecondObjectDisplay')
+        const functionSecondObject = new FunctionSecondObject();
     
-        constructorFunctionDisplay.textContent = functionObject.getFullName();
+        constructorFunctionDisplay.textContent = "Get Name: " + functionObject.getFullName();
+        constructorFunctionSecondDisplay.textContent = "Get Full Name: " + functionSecondObject.getSecondFullName();
     }
 
-    function FunctionObject()  {
+    function FunctionConstructorObject()  {
         const firstName = 'Rosalind';
         const lastName = 'Franclin';
     
-        FunctionObject.prototype.getFullName = () => {
+        FunctionConstructorObject.prototype.getFullName = () => {
             return firstName + ' ' + lastName;
         }
     
-        const privateFunction = () => {
+        /* const privateFunction = () => {
             return 'I can only be called from inside FunctionObject.'
         }
     
-        FunctionObject.prototype.callPrivateFunction = () => {
+        FunctionConstructorObject.prototype.callPrivateFunction = () => {
             return 'The private function says: ' + privateFunction();
-        }
+        } */
     }
 
 
     functionConstructorObjectAction.onclick = function() {
-        const constructorFunctionDisplay = document.getElementById('functionObjectDisplay')
-        const functionObject = new FunctionObject();
+        const constructorFunctionConstructorDisplay = document.getElementById('functionConstructorObjectDisplay')
+        const functionConstructorObject = new FunctionConstructorObject();
     
-        constructorFunctionDisplay.textContent = functionObject.getFullName();
+        constructorFunctionConstructorDisplay.textContent = "Constructor Function Full Name: " + functionConstructorObject.getFullName();
     }
 
-    function FunctionObject()  {
+    function FunctionCustomObject()  {
         const firstName = 'Francis';
         const lastName = 'Crick';
     
-        FunctionObject.prototype.getFullName = () => {
+        FunctionCustomObject.prototype.getFullName = () => {
             return firstName + ' ' + lastName;
         }
     
-        const privateFunction = () => {
+       /*  const privateFunction = () => {
             return 'I can only be called from inside FunctionObject.'
         }
     
-        FunctionObject.prototype.callPrivateFunction = () => {
+        FunctionCustomObject.prototype.callPrivateFunction = () => {
             return 'The private function says: ' + privateFunction();
-        }
+        } */
     }
 
 
     functionCustomObjectAction.onclick = function() {
-        const constructorFunctionDisplay = document.getElementById('functionObjectDisplay')
-        const functionObject = new FunctionObject();
+        const constructorFunctionCustomDisplay = document.getElementById('functionCustomObjectDisplay')
+        const functionCustomObject = new FunctionCustomObject();
     
-        constructorFunctionDisplay.textContent = functionObject.getFullName();
+        constructorFunctionCustomDisplay.textContent = "Custom Class Full Name: " + functionCustomObject.getFullName();
     }
-}
+    }
