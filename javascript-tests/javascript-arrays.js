@@ -48,7 +48,7 @@ window.onload = () => {
         {
             language: 'HTML/CSS',
             rank: 2
-        },
+        }
        /*  {
             languageName: 'Python',
             rank: 3
@@ -65,7 +65,7 @@ window.onload = () => {
             languageName: 'C/C++',
             rank: 6
         } */
-    ];
+    ]
 
     const popularityAction = document.getElementById('popularity-action');
     const popularityDisplay = document.getElementById('popularity-display');
