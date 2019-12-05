@@ -33,7 +33,7 @@ header p {
 }
 
 main {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: 100px;
     margin-left: 100px;
     background-color:rgb(191, 231, 236);
@@ -72,7 +72,7 @@ nav li {
     display: inline;
     padding: 15px; 
     margin: 0px;
-    
+    font-size: smaller;   
 }
 
 aside {        
