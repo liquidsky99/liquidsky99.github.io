@@ -4,43 +4,78 @@ window.onload = () => {
     const functionObjectAction = document.getElementById('functionObjectAction');
 
     
-    const functionObject = {
-        firstName: 'James',
-        lastName: 'Watson',
-        sayName: function(){
-            const fullName = this.firstName + " " + this.lastName;
-            var name = 'Get Name: '.concat(this.firstName,'<br>','Get Full Name: ', fullName);
-            console.log(fullName);
-            functionObjectDisplay.innerHTML = name;
+    function FunctionObject()  {
+        const firstName = 'James';
+        const lastName = 'Watson';
+    
+        FunctionObject.prototype.getFullName = () => {
+            return firstName + ' ' + lastName;
         }
-
-    };
-
-
-    functionObjectAction.onclick = function(){
-        functionObject.sayName();
+    
+        const privateFunction = () => {
+            return 'I can only be called from inside FunctionObject.'
+        }
+    
+        FunctionObject.prototype.callPrivateFunction = () => {
+            return 'The private function says: ' + privateFunction();
+        }
     }
 
 
-    functionObject.dynamicMethod = function(){
-    console.log("Dynamic Method");
-}
-
-
-class CustomClass {
-    sayName(){
-        console.log("Custom Class");
+    functionObjectAction.onclick = function() {
+        const constructorFunctionDisplay = document.getElementById('functionObjectDisplay')
+        const functionObject = new FunctionObject();
+    
+        constructorFunctionDisplay.textContent = functionObject.getFullName();
     }
-}
+
+    function FunctionObject()  {
+        const firstName = 'Rosalind';
+        const lastName = 'Franclin';
+    
+        FunctionObject.prototype.getFullName = () => {
+            return firstName + ' ' + lastName;
+        }
+    
+        const privateFunction = () => {
+            return 'I can only be called from inside FunctionObject.'
+        }
+    
+        FunctionObject.prototype.callPrivateFunction = () => {
+            return 'The private function says: ' + privateFunction();
+        }
+    }
 
 
-//simpleObject.sayName();
-functionObject.dynamicMethod();
+    functionConstructorObjectAction.onclick = function() {
+        const constructorFunctionDisplay = document.getElementById('functionObjectDisplay')
+        const functionObject = new FunctionObject();
+    
+        constructorFunctionDisplay.textContent = functionObject.getFullName();
+    }
 
-/* const functionObject = new FunctionObject();
-functionObject.sayName(); */
+    function FunctionObject()  {
+        const firstName = 'Francis';
+        const lastName = 'Crick';
+    
+        FunctionObject.prototype.getFullName = () => {
+            return firstName + ' ' + lastName;
+        }
+    
+        const privateFunction = () => {
+            return 'I can only be called from inside FunctionObject.'
+        }
+    
+        FunctionObject.prototype.callPrivateFunction = () => {
+            return 'The private function says: ' + privateFunction();
+        }
+    }
 
-const customClass = new CustomClass();
-customClass.sayName();
 
+    functionCustomObjectAction.onclick = function() {
+        const constructorFunctionDisplay = document.getElementById('functionObjectDisplay')
+        const functionObject = new FunctionObject();
+    
+        constructorFunctionDisplay.textContent = functionObject.getFullName();
+    }
 }
