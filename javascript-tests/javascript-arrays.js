@@ -40,39 +40,39 @@ window.onload = () => {
          }
     }
 
-    var programinglanguage = [
-        {
-            language: 'JavaScript',
-            rank: 1
-        },
+    var programminglanguage = [
         {
             language: 'HTML/CSS',
             rank: 2
-        }
-       /*  {
-            languageName: 'Python',
+        },
+        {
+            language: 'Python',
             rank: 3
         },
         {
-            languageName: 'Java',
+            language: 'Java',
             rank: 4
         },
         {
-            languageName: 'C#',
+            language: 'C#',
             rank: 5
         },
         {
-            languageName: 'C/C++',
+            language: 'C/C++',
             rank: 6
-        } */
+        },
+        {
+            language: 'JavaScript',
+            rank: 1
+        }
     ]
 
     const popularityAction = document.getElementById('popularity-action');
     const popularityDisplay = document.getElementById('popularity-display');
 
-    const popularityArrays = {
-        popularity: ["JavaScript","HTML/CSS","Python","Java","C#","C/C++"]
-    };
+   /*  const popularityArrays = {
+        popularity: ["HTML/CSS","JavaScript","Python","Java","C#","C/C++"]
+    }; */
 
     function compareRank(a, b) {
         const rankA = a.rank;
@@ -87,12 +87,13 @@ window.onload = () => {
        return comparison;
    }
     
-    popularityArrays.popularity.sort(compareRank);
+    programminglanguage.sort(compareRank);
 
     popularityAction.onclick = () => { 
-        for (let popularity of popularityArrays.popularity){
-        console.log(popularity);
-        elfCode.appendToList(popularityDisplay, popularity);
+        for (let popularity of programminglanguage){
+        console.log( popularity.rank);
+        elfCode.appendToList(popularityDisplay, 
+            popularity.language + ':  rank' + popularity.rank);
          }
     }
 
