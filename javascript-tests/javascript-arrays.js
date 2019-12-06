@@ -27,14 +27,14 @@ window.onload = () => {
     const languageAction = document.getElementById('language-action');
     const languageDisplay = document.getElementById('language-display');
 
-    const languagearrays = {
+    const languageArrays = {
         language: ["JavaScript","HTML","CSS","C#","Java","Python","C/C++"]
     };
 
-    languagearrays.language.sort();
+    languageArrays.language.sort();
 
     languageAction.onclick = () => { 
-        for (let language of languagearrays.language){
+        for (let language of languageArrays.language){
         console.log(language);
         elfCode.appendToList(languageDisplay, language);
          }
@@ -70,9 +70,8 @@ window.onload = () => {
     const popularityAction = document.getElementById('popularity-action');
     const popularityDisplay = document.getElementById('popularity-display');
 
-    const popularityarrays = {
-        language: ["JavaScript","HTML/CSS"]
-        /* language: ["JavaScript","HTML/CSS","Python","Java","C#","C/C++"] */
+    const popularityArrays = {
+        popularity: ["JavaScript","HTML/CSS","Python","Java","C#","C/C++"]
     };
 
     function compareRank(a, b) {
@@ -88,13 +87,12 @@ window.onload = () => {
        return comparison;
    }
     
-    popularityarrays.language.sort(compareRank);
-    /* popularityarrays.popularity.sort(compareRank); */
+    popularityArrays.popularity.sort(compareRank);
 
     popularityAction.onclick = () => { 
-        for (let language of popularityarrays.language){
+        for (let popularity of popularityArrays.popularity){
         console.log(popularity);
-        elfCode.appendToList(popularityDisplay, language);
+        elfCode.appendToList(popularityDisplay, popularity);
          }
     }
 
