@@ -27,53 +27,49 @@ window.onload = () => {
     const languageAction = document.getElementById('language-action');
     const languageDisplay = document.getElementById('language-display');
 
-    const languagearrays = {
+    const languageArrays = {
         language: ["JavaScript","HTML","CSS","C#","Java","Python","C/C++"]
     };
 
-    languagearrays.language.sort();
+    languageArrays.language.sort();
 
     languageAction.onclick = () => { 
-        for (let language of languagearrays.language){
+        for (let language of languageArrays.language){
         console.log(language);
         elfCode.appendToList(languageDisplay, language);
          }
     }
 
-    var programinglanguage = [
-        {
-            language: 'JavaScript',
-            rank: 1
-        },
+    var programminglanguage = [
         {
             language: 'HTML/CSS',
             rank: 2
-        }
-       /*  {
-            languageName: 'Python',
+        },
+        {
+            language: 'Python',
             rank: 3
         },
         {
-            languageName: 'Java',
+            language: 'Java',
             rank: 4
         },
         {
-            languageName: 'C#',
+            language: 'C#',
             rank: 5
         },
         {
-            languageName: 'C/C++',
+            language: 'C/C++',
             rank: 6
-        } */
+        },
+        {
+            language: 'JavaScript',
+            rank: 1
+        }
     ]
 
     const popularityAction = document.getElementById('popularity-action');
     const popularityDisplay = document.getElementById('popularity-display');
 
-    const popularityarrays = {
-        language: ["JavaScript","HTML/CSS"]
-        /* language: ["JavaScript","HTML/CSS","Python","Java","C#","C/C++"] */
-    };
 
     function compareRank(a, b) {
         const rankA = a.rank;
@@ -88,13 +84,13 @@ window.onload = () => {
        return comparison;
    }
     
-    popularityarrays.language.sort(compareRank);
-    /* popularityarrays.popularity.sort(compareRank); */
+    programminglanguage.sort(compareRank);
 
     popularityAction.onclick = () => { 
-        for (let language of popularityarrays.language){
-        console.log(popularity);
-        elfCode.appendToList(popularityDisplay, language);
+        for (let popularity of programminglanguage){
+        console.log( popularity.rank);
+        elfCode.appendToList(popularityDisplay, 
+            popularity.language + ':  rank' + popularity.rank);
          }
     }
 

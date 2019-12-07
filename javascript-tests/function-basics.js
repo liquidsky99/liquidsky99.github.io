@@ -33,4 +33,4 @@ window.onload = () => {
         simpleFunctionDisplay.textContent = displayText;
     }
 
-};s
+};
